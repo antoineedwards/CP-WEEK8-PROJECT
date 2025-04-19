@@ -1,0 +1,132 @@
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #00bfff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /* Input fields */
+  input, select {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  input:focus, select:focus {
+    outline: 2px solid #00bfff;
+  }
+  
+  /* Submit Button */
+  button {
+    background-color: #00bfff;
+    color: #1a1a1a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #009acd;
+  }
+  
+  /* Player List */
+  .player-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Individual player card */
+  .player-card {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .player-card .info {
+    font-size: 1rem;
+  }
+  
+  .player-card .actions a {
+    color: #00bfff;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  
+  .player-card .actions a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Rank Selector */
+  .rank-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .rank-button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    border: 1px solid #00bfff;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .rank-button.active {
+    background-color: #00bfff;
+    color: #1a1a1a;
+  }
+  
